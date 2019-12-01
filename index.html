@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hello</title>
+<style>
+	@keyframes rotator {
+		from{transform: rotate(0deg);}
+		to{transform: rotate(359deg);}
+	}
+	
+	body{
+		background-color:white;
+		overflow:hidden;
+			}
+
+	#megadark{
+		background-color:black;
+		position:absolute;
+		display:block;
+		left:-50px;
+		top:-50px;		
+	}
+
+	#biggie{
+		background-color:black;
+		position:absolute;
+		animation-name: rotator;
+		animation-duration: 3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction:reverse;		
+		
+	}
+		
+	#tiny{
+		background-image:url("images/sh2.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:70px;
+		width:70px;
+		animation-name: rotator;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;		
+		position:absolute;
+		left: 0px;	
+	}
+	
+	#mycan{
+		position:absolute;
+	}
+	
+	#snl{
+		//background-image:url("images/snl.png");
+		background-size:contain;
+		background-repeat:no-repeat;
+		position:absolute;
+		height:300px;
+		width:500px;
+	}
+	
+	#db16{
+		//background-image:url("images/db16.png");
+		background-size:contain;
+		background-repeat:no-repeat;
+		position:absolute;
+		height:50px;
+		width:90px;
+	}
+	
+	#sh1{
+		background-image:url("images/sh1.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:50px;
+		width:50px;
+		animation-name: rotator;
+		animation-duration: 3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;		
+		position:absolute;
+		left: 0px;	
+	}
+	
+	#sh2{
+		background-image:url("images/sh2.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:30px;
+		width:30px;
+		animation-name: rotator;
+		animation-duration: 5s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		position:absolute;	
+	}
+
+	#sh3{
+		background-image:url("images/sh3.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:50px;
+		width:50px;	
+		animation-name: rotator;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		position:absolute;
+	}
+
+	#sh4{
+		background-image:url("images/sh4.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:25px;
+		width:25px;	
+		animation-name: rotator;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		position:absolute;
+	}
+	
+	#sh5{
+		background-image:url("images/sh4.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:35px;
+		width:35px;	
+		animation-name: rotator;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-direction:reverse;
+		animation-iteration-count: infinite;
+		position:absolute;
+	}
+	
+	#sh6{
+		background-image:url("images/sh3.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:50px;
+		width:50px;	
+		animation-name: rotator;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		position:absolute;
+	}
+	
+	#sh7{
+		background-image:url("images/sh2.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:15px;
+		width:15px;
+		animation-name: rotator;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		position:absolute;	
+	}
+	
+	#sh8{
+		background-image:url("images/sh1.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:30px;
+		width:30px;
+		animation-name: rotator;
+		animation-duration: 3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction:reverse;		
+		position:absolute;
+		left: 0px;	
+	}
+		
+	#fade{
+		background-image:url("images/fade2.png");
+		background-size:contain;
+		background-repeat:no-repeat;
+	}
+
+	
+</style>
+</head>
+<body onload="onlyani()">
+	<canvas id="mycan" height="1000px" width="2000px"></canvas>
+	<div class="frags" id="sh1"></div>
+	<div class="frags" id="sh2"></div>
+	<div class="frags" id="sh3"></div>
+	<div class="frags" id="sh4"></div>
+	<div class="frags" id="sh5"></div>
+	<div class="frags" id="sh6"></div>
+	<div class="frags" id="sh7"></div>
+	<div class="frags" id="sh8"></div>
+	<div id="snl"></div>
+	<div id="db16"></div>
+	<div id="biggie"></div>
+	<div class="frags" id="tiny"></div>
+	<div id="megadark"></div> 
+	
+	<script src="ani1.js" type="text/javascript"></script>
+	
+	<div id="fade"></div>
+	<script type="text/javascript">
+		var fade=document.getElementById("fade");
+		fade.style.height=window.innerHeight+"px";
+		fade.style.width=window.innerWidth+"px";
+	</script>	
+</body>
+</html>
